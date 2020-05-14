@@ -7,10 +7,12 @@ import os
 
 def ml_loop(side: str):
 
+    """
     with open(os.path.join(os.path.dirname(__file__),'save','model.pickle'), 'rb') as f:
         model = pickle.load(f)
+    """
     
-    with open(os.path.join(os.path.dirname(__file__),'save','s1.pickle'), 'rb') as f:
+    with open(os.path.join(os.path.dirname(__file__),'s1.pickle'), 'rb') as f:
         ss = pickle.load(f)
 
     ball_served = False
